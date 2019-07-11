@@ -18,4 +18,26 @@ body {
   font-family: 'Comfortaa', cursive;
   font-size: 14px;
   font-weight: bold;
+  height: 100vh;
+}
+
+.header {
+  min-height: 72px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__image {
+    margin-right: 10px;
+  }
+
+  &__heading {
+    font-size: 32px;
+    margin: 0;
+
+    &--orange {
+      color: $orange;
+    }
+  }
 }
