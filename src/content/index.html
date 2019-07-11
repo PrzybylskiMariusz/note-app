@@ -13,23 +13,25 @@
     <h1 class="header__heading">Szybka<span class="header__heading header__heading--orange">Notka</span></h1>
   </header>
   <main class="main">
-    <section class="note">
-      <h2 class="note__heading"><a href="#" class="note__link">Utwórz notkę</a></h2>
+    <section class="note note--left">
+      <h2 class="note__heading note__heading--left"><a href="#" class="note__link">Utwórz notkę</a></h2>
       <form action="post" class="note__form">
         <label for="title" class="note__label">Tytuł notatki</label>
-        <input type="text" class="note__title" id="title" placeholder="Nazwij swoją notatkę">
+        <input type="text" class="note__input" id="title" placeholder="Nazwij swoją notatkę">
         <label for="content" class="note__label">Treść notatki</label>
-        <textarea name="content" id="content" cols="30" rows="10" class="note__content">Wpisz o czym chcesz pamiętać...</textarea>
-        <button class="note__button note__button--delete">Usuń notkę</button>
-        <button class="note__button note__button--save">Zapisz notkę</button>
+        <textarea name="content" id="content" cols="30" rows="10" class="note__textarea" placeholder="Wpisz o czym chcesz pamiętać..."></textarea>
+        <button class="note__delete">Usuń notkę</button>
+        <button class="note__save">Zapisz notkę</button>
       </form>
     </section>
-    <section class="note">
-      <h2 class="note__heading"><a href="#" class="note__link">Twoja notka</a></h2>
+    <section class="note note--right">
+      <h2 class="note__heading note__heading--right"><a href="#" class="note__link">Twoja notka</a></h2>
       <div class="saved">
-        <p class="saved__unsaved">Zapisz notkę, by zobaczyć jak będzie wyglądać.</p>
-        <p class="saved__heading"></p>
-        <p class="saved__content"></p>
+        <p class="saved__unsaved">Zapisz notkę, by zobaczyć<br>jak będzie wyglądać.</p>
+        <section class="saved__content">
+          <h3 class="saved__heading"></h3>
+          <p class="saved__text"></p>
+        </section>
       </div>
     </section>
   </main>
