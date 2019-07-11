@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
 
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans&display=swap&subset=latin-ext');
+
 
 html {
   box-sizing: border-box;
@@ -11,6 +13,9 @@ html {
 }
 
 body {
-  color: $yellow;
+  color: white;
   background: $violet;
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-weight: bold;
 }
