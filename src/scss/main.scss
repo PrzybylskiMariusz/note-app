@@ -28,6 +28,10 @@ body {
   justify-content: center;
   align-items: flex-start;
 
+  @media (max-width: $mobile) {
+    align-items: center;
+  }
+
   &__image {
     margin-right: 10px;
   }
@@ -38,6 +42,15 @@ body {
 
     &--orange {
       color: $orange;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      width: 75px;
     }
   }
 }
