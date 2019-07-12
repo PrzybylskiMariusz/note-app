@@ -59,9 +59,50 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 6fr;
   margin-bottom: 40px;
-  grid-gap: 32px;
+  grid-gap: 0px 32px;
+  grid-template-areas: 
+    "nav nav nav nav"
+    "note1 note1 note2 note2";
+
+  .navigation {
+    width: 100%;
+    grid-area: nav;
+    text-align: center;
+
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      display: inline-block;
+      margin: 0 16px 40px 16px;
+      padding: 12px 0;
+      text-align: center;
+      border-bottom: 2px solid white;
+      font-size: 20px;
+      max-width: 544px;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 2px solid white;
+        opacity: .7;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: white;
+    }
+
+    
+  }
 
   .note {
     max-width: 544px;
@@ -70,26 +111,17 @@ body {
     &--left {
       justify-self: end;
       width: 100%;
+      grid-area: note1;
     }
 
     &--right {
       justify-self: start;
       width: 100%;
+      grid-area: note2;
     }
 
     &__heading {
-      margin: 0 0 40px 0;
-      padding: 12px 0;
-      text-align: center;
-
-      &--left {
-        border-bottom: 2px solid white;
-      }
-
-      &--right {
-        border-bottom: 1px solid white;
-        opacity: .7;
-      }
+      display: none;
     }
 
     &__link {
