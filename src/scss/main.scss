@@ -110,9 +110,31 @@ body {
     &__link {
       text-decoration: none;
       color: white;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
 
-    
+    &__edit {
+      text-decoration: none;
+      color: white;
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
+    &__note {
+      text-decoration: none;
+      color: white;
+      display: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
   }
 
   .note {
@@ -123,6 +145,10 @@ body {
       justify-self: end;
       width: 100%;
       grid-area: note1;
+      
+      @media (max-width: $mobile) {
+        display: block;
+      }
     }
 
     &--right {
@@ -131,7 +157,7 @@ body {
       grid-area: note2;
 
       @media (max-width: $mobile) {
-          display: none;
+        display: none;
       }
     }
 
