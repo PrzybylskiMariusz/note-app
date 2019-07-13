@@ -338,7 +338,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
-  @media (max-width: 600px) {
+  @media (max-width: 781px) {
     .header {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -350,10 +350,10 @@ body {
     margin: 0; }
     .header__heading--orange {
       color: #FF715B; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .header__heading--orange {
           display: block; } }
-    @media (max-width: 600px) {
+    @media (max-width: 781px) {
       .header__heading {
         font-size: 20px;
         width: 75px; } }
@@ -368,7 +368,7 @@ body {
   margin: 0 16px 40px 16px;
   grid-gap: 0px 32px;
       grid-template-areas: "nav nav nav nav" "note1 note1 note2 note2"; }
-  @media (max-width: 600px) {
+  @media (max-width: 781px) {
     .main {
           grid-template-areas: "nav nav nav nav" "note note note note"; } }
   .main .navigation {
@@ -398,30 +398,30 @@ body {
       max-width: 544px;
       width: 100%;
       font-size: 14px; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .navigation__item {
           margin: 0 0 40px 0; } }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .navigation__item--mobile {
           opacity: .7; } }
     .main .navigation__link {
       text-decoration: none;
       color: white; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .navigation__link {
           display: none; } }
     .main .navigation__edit {
       text-decoration: none;
       color: white;
       display: none; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .navigation__edit {
           display: block; } }
     .main .navigation__note {
       text-decoration: none;
       color: white;
       display: none; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .navigation__note {
           display: block; } }
   .main .note {
@@ -435,9 +435,11 @@ body {
           justify-self: end;
       width: 100%;
       grid-area: note1; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .note--left {
-          grid-area: note; } }
+          grid-area: note;
+          -ms-grid-column-align: center;
+              justify-self: center; } }
     .main .note--right {
       -ms-grid-row: 3;
       -ms-grid-column: 5;
@@ -446,10 +448,12 @@ body {
           justify-self: start;
       width: 100%;
       grid-area: note2; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .note--right {
-          grid-area: note; } }
-      @media (max-width: 600px){
+          grid-area: note;
+          -ms-grid-column-align: center;
+              justify-self: center; } }
+      @media (max-width: 781px){
     .main .navigation {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -462,7 +466,7 @@ body {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 7; } }
-    @media (max-width: 600px) {
+    @media (max-width: 781px) {
       .main .note--invisable {
         display: none; } }
     .main .note__heading {
@@ -474,7 +478,7 @@ body {
       max-width: 355px;
       width: 100%;
       margin: 0 auto; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .note__form {
           max-width: 310px;
           display: -webkit-box;
@@ -528,7 +532,7 @@ body {
       color: #FF715B;
       background: transparent;
       border: 1px solid #FF715B; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .note__delete {
           max-width: 310px;
           -webkit-box-ordinal-group: 2;
@@ -543,7 +547,7 @@ body {
       background: #FF715B;
       border: 1px solid #FF715B;
       color: white; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .note__save {
           max-width: 310px;
           margin-bottom: 20px; } }
@@ -551,7 +555,7 @@ body {
       max-width: 355px;
       width: 100%;
       margin: 0 auto; }
-      @media (max-width: 600px) {
+      @media (max-width: 781px) {
         .main .note .saved {
           max-width: 310px; } }
       .main .note .saved__unsaved {
