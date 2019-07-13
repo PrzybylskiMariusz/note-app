@@ -9,6 +9,12 @@ const noteLeft = document.querySelector('.note--left--js');
 const noteRight = document.querySelector('.note--right--js');
 
 tabRight.addEventListener("click", (e) => {
-    noteLeft.style.display = "none";
-    noteRight.style.display = "block";
-})
+    noteLeft.classList.add('note--invisable');
+    noteRight.classList.remove('note--invisable');
+});
+
+tabLeft.addEventListener("click", (e) => {
+    noteLeft.classList.remove('note--invisable');
+    noteRight.classList.add('note--invisable');
+});
+
