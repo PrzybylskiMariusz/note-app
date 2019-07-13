@@ -263,6 +263,20 @@ body {
       &__unsaved {
         opacity: .5;
         text-align: center;
+
+        &--hide {
+          display: none;
+        }
+      }
+
+      &__heading {
+        font-size: 30px;
+        font-weight: bold;
+        color: $orange;
+      }
+
+      &__text {
+        opacity: .8;
       }
     }
   }

@@ -21,22 +21,22 @@
     </nav>
     <section class="note note--left note--left--js">
       <h2 class="note__heading note__heading--left"><a href="#" class="note__link">Utwórz notkę</a></h2>
-      <form action="post" class="note__form">
+      <form class="note__form">
         <label for="title" class="note__label">Tytuł notatki</label>
-        <input type="text" class="note__input" id="title" placeholder="Nazwij swoją notatkę">
+        <input type="text" class="note__input note__input--js" id="title" placeholder="Nazwij swoją notatkę">
         <label for="content" class="note__label">Treść notatki</label>
-        <textarea name="content" id="content" cols="30" rows="10" class="note__textarea" placeholder="Wpisz o czym chcesz pamiętać..."></textarea>
-        <button class="note__delete">Usuń notkę</button>
-        <button class="note__save">Zapisz notkę</button>
+        <textarea name="content" id="content" cols="30" rows="10" class="note__textarea note__textarea--js" placeholder="Wpisz o czym chcesz pamiętać..."></textarea>
+        <button class="note__delete note__delete--js">Usuń notkę</button>
+        <button class="note__save note__save--js">Zapisz notkę</button>
       </form>
     </section>
     <section class="note note--right note--right--js note--invisable">
       <h2 class="note__heading note__heading--right"><a href="#" class="note__link">Twoja notka</a></h2>
       <div class="saved">
-        <p class="saved__unsaved">Zapisz notkę, by zobaczyć<br>jak będzie wyglądać.</p>
-        <section class="saved__content">
-          <h3 class="saved__heading">Brak tytułu</h3>
-          <p class="saved__text"></p>
+        <p class="saved__unsaved saved__unsaved--js">Zapisz notkę, by zobaczyć<br>jak będzie wyglądać.</p>
+        <section class="saved__content saved__unsaved--hide saved__content--js">
+          <h3 class="saved__heading saved__heading--js">Brak tytułu</h3>
+          <p class="saved__text saved__text--js"></p>
         </section>
       </div>
     </section>
