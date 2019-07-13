@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <img src="assets/img/logo.png" alt="logo aplikacji Szybka Notka" class="header__image">
+    <h1 class="header__heading">Szybka<span class="header__heading header__heading--orange">Notka</span></h1>
+  </header>
+  <main class="main">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--js"><a href="#" class="navigation__link">Utwórz notkę</a><a href="#" class="navigation__edit navigation__edit--js">Utwórz notkę</a></li>
+        <li class="navigation__item navigation__item--js navigation__item--mobile"><a href="#" class="navigation__link">Twoja notka</a><a href="#" class="navigation__note navigation__note--js">Twoja notka</a></li>
+      </ul>
+    </nav>
+    <section class="note note--left note--left--js">
+      <h2 class="note__heading note__heading--left"><a href="#" class="note__link">Utwórz notkę</a></h2>
+      <form class="note__form">
+        <label for="title" class="note__label">Tytuł notatki</label>
+        <input type="text" class="note__input note__input--js" id="title" placeholder="Nazwij swoją notatkę">
+        <label for="content" class="note__label">Treść notatki</label>
+        <textarea name="content" id="content" cols="30" rows="10" class="note__textarea note__textarea--js" placeholder="Wpisz o czym chcesz pamiętać..."></textarea>
+        <button class="note__delete note__delete--js">Usuń notkę</button>
+        <button class="note__save note__save--js">Zapisz notkę</button>
+      </form>
+    </section>
+    <section class="note note--right note--right--js note--invisable">
+      <h2 class="note__heading note__heading--right"><a href="#" class="note__link">Twoja notka</a></h2>
+      <div class="saved">
+        <p class="saved__unsaved saved__unsaved--js">Zapisz notkę, by zobaczyć<br>jak będzie wyglądać.</p>
+        <section class="saved__content saved__unsaved--hide saved__content--js">
+          <h3 class="saved__heading saved__heading--js">Brak tytułu</h3>
+          <p class="saved__text saved__text--js"></p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">© 2019 Mariusz Przybylski</footer>
+
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
