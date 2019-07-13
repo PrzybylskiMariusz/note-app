@@ -566,9 +566,13 @@ body {
       .main .note .saved__heading {
         font-size: 30px;
         font-weight: bold;
-        color: #FF715B; }
+        color: #FF715B;
+        overflow-wrap: break-word; }
       .main .note .saved__text {
-        opacity: .8; }
+        opacity: .8;
+        max-height: 300px;
+        overflow: scroll;
+        overflow-wrap: break-word; }
 
 .footer {
   text-align: center;
