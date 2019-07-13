@@ -150,6 +150,7 @@ body {
       
       @media (max-width: $mobile) {
         grid-area: note;
+        justify-self: center;
       }
     }
 
@@ -160,6 +161,7 @@ body {
 
       @media (max-width: $mobile) {
         grid-area: note;
+        justify-self: center;
       }
     }
 
