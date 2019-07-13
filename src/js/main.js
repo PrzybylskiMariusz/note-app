@@ -31,10 +31,12 @@ const savedContent = document.querySelector('.saved__content--js');
 
 
 inputTitle.addEventListener('keyup', (e) => {
+    e.preventDefault();
     localStorage.setItem('inputTitle', e.target.value);
 });
 
 inputText.addEventListener('keyup', (e) => {
+    e.preventDefault();
     localStorage.setItem('inputText', e.target.value);
 })
 

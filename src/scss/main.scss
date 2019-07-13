@@ -275,10 +275,14 @@ body {
         font-size: 30px;
         font-weight: bold;
         color: $orange;
+        overflow-wrap: break-word;
       }
 
       &__text {
         opacity: .8;
+        max-height: 300px;
+        overflow: scroll;
+        overflow-wrap: break-word;
       }
     }
   }
