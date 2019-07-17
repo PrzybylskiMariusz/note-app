@@ -531,7 +531,13 @@ body {
       margin-right: 20px;
       color: #FF715B;
       background: transparent;
-      border: 1px solid #FF715B; }
+      border: 1px solid #FF715B;
+      -webkit-transition: background .5s ease-in-out, color .5s ease-in-out;
+      -o-transition: background .5s ease-in-out, color .5s ease-in-out;
+      transition: background .5s ease-in-out, color .5s ease-in-out; }
+      .main .note__delete:hover {
+        background: #FF715B;
+        color: #221C37; }
       @media (max-width: 781px) {
         .main .note__delete {
           max-width: 310px;
@@ -546,7 +552,12 @@ body {
       cursor: pointer;
       background: #FF715B;
       border: 1px solid #FF715B;
-      color: white; }
+      color: white;
+      -webkit-transition: color .5s ease-in-out;
+      -o-transition: color .5s ease-in-out;
+      transition: color .5s ease-in-out; }
+      .main .note__save:hover {
+        color: #221C37; }
       @media (max-width: 781px) {
         .main .note__save {
           max-width: 310px;
