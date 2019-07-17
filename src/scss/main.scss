@@ -63,12 +63,12 @@ body {
   grid-template-rows: 1fr 6fr;
   margin: 0 16px 40px 16px;
   grid-gap: 0px 32px;
-  grid-template-areas: 
+  grid-template-areas:
     "nav nav nav nav"
     "note1 note1 note2 note2";
 
   @media (max-width: $mobile) {
-    grid-template-areas: 
+    grid-template-areas:
       "nav nav nav nav"
       "note note note note"
   }
@@ -142,12 +142,12 @@ body {
   .note {
     max-width: 544px;
     width: 100%;
-    
+
     &--left {
       justify-self: end;
       width: 100%;
       grid-area: note1;
-      
+
       @media (max-width: $mobile) {
         grid-area: note;
         justify-self: center;
@@ -230,6 +230,12 @@ body {
       color: $orange;
       background: transparent;
       border: 1px solid $orange;
+      transition: background .5s ease-in-out, color .5s ease-in-out;
+
+      &:hover {
+        background: $orange;
+        color: $violet;
+      }
 
       @media (max-width: $mobile) {
         max-width: 310px;
@@ -246,6 +252,11 @@ body {
       background: $orange;
       border: 1px solid $orange;
       color: white;
+      transition: color .5s ease-in-out;
+
+      &:hover {
+        color: $violet;
+      }
 
       @media (max-width: $mobile) {
         max-width: 310px;
